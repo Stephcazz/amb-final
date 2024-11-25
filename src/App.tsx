@@ -6,6 +6,8 @@ import { TermsOfService } from './pages/TermsOfService';
 import { CookiePolicy } from './pages/CookiePolicy';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { ThankYou } from './pages/ThankYou';
+import { MortgageLanding } from './pages/MortgageLanding';
+import { MortgageThankYou } from './pages/MortgageThankYou';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/politique-cookies" element={<CookiePolicy />} />
         <Route path="/politique-confidentialite" element={<PrivacyPolicy />} />
         <Route path="/merci" element={<ThankYou />} />
+        <Route path="/immo-v1" element={<MortgageLanding />} />
+        <Route path="/immo-v1/merci" element={<MortgageThankYou />} />
       </Routes>
     </BrowserRouter>
   );
